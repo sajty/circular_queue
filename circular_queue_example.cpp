@@ -29,7 +29,7 @@ void popData(int id){
 	try {
 		while(1)
 			result[id] += tasks.pop();
-	} catch(exNoMoreData ex){}
+	} catch(exNoMorePush ex){}
 }
 int main(){
 	boost::thread* pushingThreads[pushingThreadCount];
